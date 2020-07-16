@@ -3,34 +3,34 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>PyRoss Blog | Inference, forecasts, and optimised control of epidemiological models in Python</title>
+<title>PyRoss | Inference, forecasts, and optimised control of epidemiological models in Python</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="PyRoss Blog" />
+<meta property="og:title" content="PyRoss" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Inference, forecasts, and optimised control of epidemiological models in Python" />
 <meta property="og:description" content="Inference, forecasts, and optimised control of epidemiological models in Python" />
 <link rel="canonical" href="https://pyrosslib.github.io/blog/" />
 <meta property="og:url" content="https://pyrosslib.github.io/blog/" />
-<meta property="og:site_name" content="PyRoss Blog" />
+<meta property="og:site_name" content="PyRoss" />
 <script type="application/ld+json">
-{"description":"Inference, forecasts, and optimised control of epidemiological models in Python","@type":"WebSite","headline":"PyRoss Blog","url":"https://pyrosslib.github.io/blog/","name":"PyRoss Blog","@context":"https://schema.org"}</script>
+{"description":"Inference, forecasts, and optimised control of epidemiological models in Python","@type":"WebSite","headline":"PyRoss","url":"https://pyrosslib.github.io/blog/","name":"PyRoss","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pyrosslib.github.io/blog/feed.xml" title="PyRoss Blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>PyRoss Blog | Inference, forecasts, and optimised control of epidemiological models in Python</title>
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pyrosslib.github.io/blog/feed.xml" title="PyRoss" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>PyRoss | Inference, forecasts, and optimised control of epidemiological models in Python</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="PyRoss Blog" />
+<meta property="og:title" content="PyRoss" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Inference, forecasts, and optimised control of epidemiological models in Python" />
 <meta property="og:description" content="Inference, forecasts, and optimised control of epidemiological models in Python" />
 <link rel="canonical" href="https://pyrosslib.github.io/blog/" />
 <meta property="og:url" content="https://pyrosslib.github.io/blog/" />
-<meta property="og:site_name" content="PyRoss Blog" />
+<meta property="og:site_name" content="PyRoss" />
 <script type="application/ld+json">
-{"description":"Inference, forecasts, and optimised control of epidemiological models in Python","@type":"WebSite","headline":"PyRoss Blog","url":"https://pyrosslib.github.io/blog/","name":"PyRoss Blog","@context":"https://schema.org"}</script>
+{"description":"Inference, forecasts, and optimised control of epidemiological models in Python","@type":"WebSite","headline":"PyRoss","url":"https://pyrosslib.github.io/blog/","name":"PyRoss","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://pyrosslib.github.io/blog/feed.xml" title="PyRoss Blog" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://pyrosslib.github.io/blog/feed.xml" title="PyRoss" />
 
 <script>
 function wrap_img(fn) {
@@ -63,7 +63,7 @@ window.onload = wrap_img;
 </script>
 </head><body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">PyRoss Blog</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">PyRoss</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -78,7 +78,17 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <div class="home"><p><img src="https://raw.githubusercontent.com/rajeshrinet/pyross/master/examples/banner.jpg" alt="Imagel" /></p>
+
+<p><a href="https://github.com/rajeshrinet/pyross">PyRoss</a> is a numerical library that offers an integrated platform for <strong>inference</strong>, <strong>forecasts</strong> and <strong>non-pharmaceutical interventions</strong> in structured epidemiological compartment models.</p>
+
+<p><strong>Compartment models</strong> of arbitrary complexity can be  <strong>user-defined</strong> through Python dictionaries. The most common epidemiological models, and several less common ones, come pre-defined with the library. Models can include <strong>stages</strong> to allow for non-exponentially distributed compartmental residence times. Currently,  <a href="https://github.com/rajeshrinet/pyross/blob/master/docs/models.pdf">pre-defined models</a> include ones with multiple disease states (exposed, asymptomatic, symptomatic, etc) and may be further divided by age, and by objective medical states (hospitalized, in ICU, etc). The compartment framework supports models for <strong>disease surveillance</strong> and <strong>quarantine</strong> and a variety of other processes of epidemiological relevance.</p>
+
+<p><strong>Generative processes</strong> can be formulated <strong>stochastically</strong> (as Markov population processes) or <strong>deterministically</strong> (as systems of differential equations). Population processes are sampled exactly by the Doob-Gillespie algorithm or approximately by the tau-leaping algorithm while differential equations are integrated by both fixed and adaptive time-stepping. A <strong>hybrid algorithm</strong> transits dynamically between these  depending on the magnitude of the compartmental fluctuations.</p>
+
+<p><strong>Bayesian inference</strong> on pre-defined or user-defined models is performed using model-adapted <strong>Gaussian processes</strong>  derived from <strong>functional limit theorems</strong> for Markov  population process. Generative models are fitted to data through the surveillance model allowing for possibily <strong>unobserved</strong> compartments. The <strong>MAP</strong> estimates of parameters and their standard errors can be obtained rapidly by optimising, obviating the need for expensive Markov chain Monte Carlo. This enables the fast evaluation of the <strong>model evidence</strong>, through which competing models may be <strong>objectively compared</strong> and their forecasts combined by <strong>Bayesian model averaging</strong>. Forecasts of disease progression, then, can be <strong>fully Bayesian</strong>, convolving uncertainties in data, parameters and models. The sensitivity of these forecasts is estimated through the <strong>Fisher information matrix</strong>.</p>
+
+<p><strong>Non-pharmaceutical interventions</strong> are implemented as modifications of the <strong>contact structures</strong> of the model. <strong>Optimised control</strong> of these structures, given <strong>cost functions</strong>, is possible. This feature is being actively developed to be better integrated with the library.</p>
 
 
 
@@ -98,19 +108,7 @@ window.onload = wrap_img;
 
    <!-- Assemble final sorted posts array -->
   
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/blog/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/markdown/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">Jan 14, 2020</p>
-</li></ul>
-
-    </div>
+  </div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/blog/"></data>
