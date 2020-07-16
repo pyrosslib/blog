@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>About Me | PyRoss</title>
+<title>About | PyRoss</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="About Me" />
+<meta property="og:title" content="About" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Inference, forecasts, and optimised control of epidemiological models in Python" />
 <meta property="og:description" content="Inference, forecasts, and optimised control of epidemiological models in Python" />
@@ -13,12 +13,12 @@
 <meta property="og:url" content="https://pyrosslib.github.io/blog/about/" />
 <meta property="og:site_name" content="PyRoss" />
 <script type="application/ld+json">
-{"description":"Inference, forecasts, and optimised control of epidemiological models in Python","@type":"WebSite","headline":"About Me","url":"https://pyrosslib.github.io/blog/about/","name":"PyRoss","@context":"https://schema.org"}</script>
+{"description":"Inference, forecasts, and optimised control of epidemiological models in Python","@type":"WebSite","headline":"About","url":"https://pyrosslib.github.io/blog/about/","name":"PyRoss","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pyrosslib.github.io/blog/feed.xml" title="PyRoss" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>About Me | PyRoss</title>
+<title>About | PyRoss</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="About Me" />
+<meta property="og:title" content="About" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Inference, forecasts, and optimised control of epidemiological models in Python" />
 <meta property="og:description" content="Inference, forecasts, and optimised control of epidemiological models in Python" />
@@ -26,7 +26,7 @@
 <meta property="og:url" content="https://pyrosslib.github.io/blog/about/" />
 <meta property="og:site_name" content="PyRoss" />
 <script type="application/ld+json">
-{"description":"Inference, forecasts, and optimised control of epidemiological models in Python","@type":"WebSite","headline":"About Me","url":"https://pyrosslib.github.io/blog/about/","name":"PyRoss","@context":"https://schema.org"}</script>
+{"description":"Inference, forecasts, and optimised control of epidemiological models in Python","@type":"WebSite","headline":"About","url":"https://pyrosslib.github.io/blog/about/","name":"PyRoss","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -81,21 +81,162 @@ window.onload = wrap_img;
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">About Me</h1>
+    <h1 class="post-title">About</h1>
   </header>
 
   <div class="post-content">
-    <p>This is where you put the contents of your <em>About</em> page. Like all your pages, it’s in <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> format.</p>
+    <h2 id="about">About</h2>
 
-<p>This website is powered by <strong><a href="https://github.com/fastai/fastpages">fastpages</a></strong> <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+<p><a href="https://github.com/rajeshrinet/pyross">PyRoss</a> is a numerical library that offers an integrated platform for <strong>inference</strong>, <strong>forecasts</strong> and <strong>non-pharmaceutical interventions</strong> in structured epidemiological compartment models.</p>
 
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>a blogging platform that natively supports Jupyter notebooks in addition to other formats. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p><strong>Compartment models</strong> of arbitrary complexity can be  <strong>user-defined</strong> through Python dictionaries. The most common epidemiological models, and several less common ones, come pre-defined with the library. Models can include <strong>stages</strong> to allow for non-exponentially distributed compartmental residence times. Currently,  <a href="https://github.com/rajeshrinet/pyross/blob/master/docs/models.pdf">pre-defined models</a> include ones with multiple disease states (exposed, asymptomatic, symptomatic, etc) and may be further divided by age, and by objective medical states (hospitalized, in ICU, etc). The compartment framework supports models for <strong>disease surveillance</strong> and <strong>quarantine</strong> and a variety of other processes of epidemiological relevance.</p>
+
+<p><strong>Generative processes</strong> can be formulated <strong>stochastically</strong> (as Markov population processes) or <strong>deterministically</strong> (as systems of differential equations). Population processes are sampled exactly by the Doob-Gillespie algorithm or approximately by the tau-leaping algorithm while differential equations are integrated by both fixed and adaptive time-stepping. A <strong>hybrid algorithm</strong> transits dynamically between these  depending on the magnitude of the compartmental fluctuations.</p>
+
+<p><strong>Bayesian inference</strong> on pre-defined or user-defined models is performed using model-adapted <strong>Gaussian processes</strong>  derived from <strong>functional limit theorems</strong> for Markov  population process. Generative models are fitted to data through the surveillance model allowing for possibily <strong>unobserved</strong> compartments. The <strong>MAP</strong> estimates of parameters and their standard errors can be obtained rapidly by optimising, obviating the need for expensive Markov chain Monte Carlo. This enables the fast evaluation of the <strong>model evidence</strong>, through which competing models may be <strong>objectively compared</strong> and their forecasts combined by <strong>Bayesian model averaging</strong>. Forecasts of disease progression, then, can be <strong>fully Bayesian</strong>, convolving uncertainties in data, parameters and models. The sensitivity of these forecasts is estimated through the <strong>Fisher information matrix</strong>.</p>
+
+<p><strong>Non-pharmaceutical interventions</strong> are implemented as modifications of the <strong>contact structures</strong> of the model. <strong>Optimised control</strong> of these structures, given <strong>cost functions</strong>, is possible. This feature is being actively developed to be better integrated with the library.</p>
+
+<p><a href="https://github.com/lukastk/PyRossGeo">PyRossGeo</a> is a companion library that supports <strong>spatially resolved compartment models</strong> with explicit <strong>commuting networks</strong>. <a href="https://github.com/rajeshrinet/pyrossTSI">PyRossTSI</a> is another companion library for <strong>time since infection models</strong>.</p>
+
+<p>The libraries are named after <a href="https://en.wikipedia.org/wiki/Ronald_Ross">Sir Ronald Ross</a>, doctor, mathematician and poet. In 1898 he made “the great discovery” in his laboratory in Calcutta “that malaria is conveyed by the bite of a mosquito”.  He won the Nobel Prize in 1902 and laid the foundations of the mathematical modelling of infectious diseases.</p>
+
+<p>The authors are part of <a href="https://royalsociety.org/news/2020/03/urgent-call-epidemic-modelling/">The Rapid Assistance in Modelling the Pandemic (RAMP)</a> taskforce at the <strong>University of Cambridge</strong>. In alphabetical order, we are:
+<a href="https://github.com/ronojoy">Ronojoy Adhikari</a>,
+<a href="https://github.com/TakodaS">Austen Bolitho</a>,
+Fernando Caballero, Michael Cates,
+<a href="https://github.com/JakubJDolezal">Jakub Dolezal</a>,
+<a href="https://github.com/tekeh">Tim Ekeh</a>,
+Jules Guioth, Robert Jack,
+<a href="https://github.com/juliankappler">Julian Kappler</a>,
+<a href="https://github.com/lukastk">Lukas Kikuchi</a>,
+<a href="https://github.com/Irene-Li">Irene Li</a>,
+Joseph Peterson,
+<a href="https://github.com/ppietzonka">Patrick Pietzonka</a>,
+<a href="https://github.com/BenjaminRemez">Benjamin Remez</a>,
+<a href="https://github.com/prohrbach">Paul Rohrbach</a>,
+<a href="https://github.com/rajeshrinet">Rajesh Singh</a>, 
+and <a href="https://github.com/phi6GTurk">Günther Turk</a>.</p>
+
+<p>Please read the  <a href="https://arxiv.org/abs/2005.09625">PyRoss paper</a> and <a href="https://github.com/rajeshrinet/pyross/wiki/">PyRoss Wiki</a> before you use PyRoss for your research. <a href="https://github.com/rajeshrinet/pyross/issues">Open an issue</a>, in preference to emailing us with queries. Join our <a href="https://join.slack.com/t/pyross/shared_invite/zt-e8th6kcz-S4b_oJIZWPsGLruSPl3Zuw">Slack channel</a>  for discussion. Please follow the <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">Contributor Covenant</a> in all PyRoss fora. Thank you!</p>
+
+<h2 id="installation">Installation</h2>
+<p>You can take PyRoss for a spin <strong>without installation</strong>: <a href="https://mybinder.org/v2/gh/rajeshrinet/pyross/master?filepath=binder"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a>. Please be patient while <a href="https://mybinder.org/v2/gh/rajeshrinet/pyross/master?filepath=binder">Binder</a> loads.</p>
+
+<h3 id="via-anaconda">Via <a href="https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/index.html">Anaconda</a></h3>
+
+<p>Install PyRoss and its dependencies in a <code class="highlighter-rouge">pyross</code> <a href="https://github.com/rajeshrinet/pyross/blob/master/environment.yml">environment</a>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;</span> git clone https://github.com/rajeshrinet/pyross.git
+<span class="o">&gt;&gt;</span> <span class="nb">cd </span>pyross
+<span class="o">&gt;&gt;</span> make <span class="nb">env</span>
+<span class="o">&gt;&gt;</span> conda activate pyross
+<span class="o">&gt;&gt;</span> make
+</code></pre></div></div>
+
+<h3 id="via-pip">Via pip</h3>
+
+<p>Install the latest <a href="https://pypi.org/project/pyross">PyPI</a> version</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;</span> pip <span class="nb">install </span>pyross
+</code></pre></div></div>
+
+<h3 id="from-a-checkout-of-this-repository">From a checkout of this repository</h3>
+
+<p>Install PyRoss and required dependencies using</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;</span> git clone https://github.com/rajeshrinet/pyross.git
+<span class="o">&gt;&gt;</span> <span class="nb">cd </span>pyross
+<span class="o">&gt;&gt;</span> pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+<span class="o">&gt;&gt;</span> python setup.py <span class="nb">install</span>
+</code></pre></div></div>
+
+<h4 id="testing">Testing</h4>
+<p>Short test of initialisation and running</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make test
+</code></pre></div></div>
+
+<p>Long test of all example notebooks. Optionally can specify path and recursion
+to test a certain subset of notebooks.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make nbtest -e path=examples/deterministic/
+</code></pre></div></div>
+
+<p><strong>Age structure data:</strong> <a href="https://www.populationpyramid.net/">Population Pyramid</a> website</p>
+
+<p><strong>Contact structure data:</strong> <em>Projecting social contact matrices in 152 countries using contact surveys and demographic data</em>, Kiesha Prem, Alex R. Cook, Mark Jit, <a href="https://doi.org/10.1371/journal.pcbi.1005697">PLOS Computational Biology, (2017)</a></p>
+
+<h2 id="examples">Examples</h2>
+
+<p>PyRoss has model-agnostic, formulation-agnostic intuitive interface. Once a model is instantiated, stochastic, deterministic and hybrid simulations can be performed through the same interface. The example below shows how to set up a deterministic SIR simulation. <a href="https://pyross.readthedocs.io/en/latest/">PyRoss Documentation</a> contains links for more examples.</p>
+
+<pre><code class="language-Python"># Ex1: M=1, SIR
+import numpy as np
+import pyross
+
+M     = 1                  # the SIR model has no age structure
+Ni    = 1000*np.ones(M)    # so there is only one age group
+N     = np.sum(Ni)         # and the total population is the size of this age group
+
+beta  = 0.2                # infection rate
+gIa   = 0.1                # recovery rate of asymptomatic infectives
+gIs   = 0.1                # recovery rate of symptomatic infectives
+alpha = 0                  # fraction of asymptomatic infectives
+fsa   = 1                  # the self-isolation parameter
+
+Ia0   = np.array([0])      # the SIR model has only one kind of infective
+Is0   = np.array([1])      # we take these to be symptomatic
+R0    = np.array([0])      # and assume there are no recovered individuals initially
+S0    = N-(Ia0+Is0+R0)     # initial susceptibles are obtained from S + Ia + Is + R = N
+
+# there is no contact structure
+def contactMatrix(t):   
+    return np.identity(M)
+
+# instantiate model
+parameters = {'alpha':alpha, 'beta':beta, 'gIa':gIa, 'gIs':gIs, 'fsa':fsa}
+model      = pyross.deterministic.SIR(parameters, M, Ni)
+
+# simulate model
+Tf, Nt = 160,  160           # duration of simulation and data points
+data = model.simulate(S0, Ia0, Is0, contactMatrix, Tf, Nt)
+
+# time series of S, Ia, Is, R
+S  = model.S(data)
+Ia = model.Ia(data)
+Is = model.Is(data)
+R  = model.R(data)
+</code></pre>
+
+<h2 id="publications">Publications</h2>
+<ul>
+  <li>
+    <p><strong>Inference, prediction and optimization of non-pharmaceutical interventions using compartment models: the PyRoss library</strong>, R. Adhikari, Austen Bolitho, Fernando Caballero, Michael E. Cates,
+Jakub Dolezal, Timothy Ekeh, Jules Guioth, Robert L. Jack, Julian Kappler,
+Lukas Kikuchi, Hideki Kobayashi, Yuting I. Li, Joseph D. Peterson, Patrick
+Pietzonka, Benjamin Remez, Paul B. Rohrbach, Rajesh Singh, and Günther Turk, <a href="https://arxiv.org/abs/2005.09625">arXiv:2005.09625</a>, <a href="https://www.researchgate.net/publication/341496170_Inference_prediction_and_optimization_of_non-pharmaceutical_interventions_using_compartment_models_the_PyRoss_library">Research Gate</a>.  <br /> <em>(Please cite this paper if you use PyRoss in your research)</em>.</p>
+  </li>
+  <li>
+    <p><strong>Age-structured impact of social distancing on the COVID-19 epidemic in India</strong>, Rajesh Singh and R. Adhikari,  <a href="https://arxiv.org/abs/2003.12055">arXiv:2003.12055</a>, <a href="https://www.researchgate.net/publication/340209224_Age-structured_impact_of_social_distancing_on_the_COVID-19_epidemic_in_India_Updates_at_httpsgithubcomrajeshrinetpyrossa">Research Gate</a>.</p>
+  </li>
+</ul>
+
+<h2 id="news">News</h2>
+<ul>
+  <li>
+    <p>A partial list of news articles on PyRoss-based research:  <a href="https://zeenews.india.com/india/3-week-coronavirus-covid-19-lockdown-not-enough-sustained-periods-of-shutdown-with-periodic-relaxation-will-work-research-2272313.html">Zee News</a>
+| <a href="https://www.varsity.co.uk/news/19284">Varsity</a>
+|  <a href="http://www.theweekendleader.com/Headlines/54963/49-day-lockdown-necessary-to-stop-covid-19-resurgence-in-india-study.html">The Weekend Leader</a> | <a href="https://weather.com/en-IN/india/coronavirus/news/2020-03-29-india-needs-49-day-lockdown-prevent-resurgence-covid-19-study">The Weather Channel</a> | <a href="https://www.tribuneindia.com/news/49-day-lockdown-necessary-to-stop-coronavirus-resurgence-in-india-study-62790">The Tribune</a> | <a href="https://timesofindia.indiatimes.com/readersblog/viewofac/a-hard-headed-look-can-india-fight-covid-19-only-through-lock-down-for-how-long-11163/">The Times of India</a> | <a href="https://www.telegraphindia.com/india/coronavirus-outbreak-a-case-for-evidence-based-lockdowns-after-april-14/cid/1760155">The Telegraph</a> | <a href="http://www.thenorthlines.com/21-day-covid-19-lockdown-not-enough-sustained-shutdown-with-periodic-relaxation-will-work-research/">The Northlines</a> | <a href="https://www.newindianexpress.com/nation/2020/mar/28/21-day-lockdown-not-enough-to-contain-coronavirus-outbreak-study-2122803.html">The New Indian Express</a> | <a href="https://thefederal.com/covid-19/data-impact-to-decide-extension-of-covid-19-lockdown-experts/">The Federal</a> | <a href="https://swarajyamag.com/insta/49-day-lockdown-required-to-prevent-return-of-covid-19-in-india-cambridge-university-study-suggests">Swarajya</a> | <a href="https://snooptales.com/2020/03/30/coronavirus-lockdown-cambridge-model-predicts-what-india-needs-to-contain-covid-19-spread/">Snoop Tales</a> | <a href="https://scroll.in/article/958277/the-political-fix-will-covid-19-crisis-slow-down-modis-centralising-tendencies">Scroll.in</a> | <a href="https://www.rediff.com/news/interview/coronavirus-in-india-india-may-need-a-49-day-lockdown/20200409.htm">Rediff.com</a> | <a href="https://www.thequint.com/news/india/scientists-mathematical-modeling-warn-sustained-lockdowns-to-beat-covid-19">The Quint</a> | <a href="https://www.peoplesreporter.in/science-technology/5801-minimum-49-days-lockdown-necessary-to-prevent-covid-19-says-cambridge-researcher.html">People’s Reporter</a> | <a href="https://newsbunddle.com/%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE%E0%A4%B5%E0%A4%BE%E0%A4%AF%E0%A4%B0%E0%A4%B8-%E0%A4%B2%E0%A5%89%E0%A4%95%E0%A4%A1%E0%A4%BE%E0%A4%89%E0%A4%A8-%E0%A4%95%E0%A5%88%E0%A4%AE/">News Bundle</a> | <a href="https://www.newsgram.com/49-day-national-lockdown-prevent-coronavirus-resurgence-india">Newsgram</a> | <a href="https://www.nature.com/articles/d41586-020-01058-5">Nature News</a> | <a href="https://www.mathrubhumi.com/news/india/49-day-lockdown-necessary-to-stop-coronavirus-resurgence-in-india-study-1.4652600">Mathrubhumi</a>  | <a href="https://www.livemint.com/news/india/49-day-lockdown-necessary-to-stop-coronavirus-resurgence-in-india-study-11585473979844.html">liveMint</a> |  <a href="https://indianewengland.com/2020/03/49-day-lockdown-necessary-to-stop-covid-19-resurgence-in-india-study/">India New England News</a> | <a href="https://www.indiatoday.in/india/story/coronavirus-lockdown-india-cambridge-mathematical-model-extension-1661321-2020-03-30">India Today</a> | <a href="https://bengali.indianexpress.com/opinion/21-days-lock-down-not-enough-exponential-curve-research-206782/">Indian Express: Bangla</a> | <a href="https://indiablooms.com/health-details/H/5782/india-needs-49-day-lockdown-to-combat-covid-19-cambridge-study.html">Indian Blooms</a> | <a href="https://f87kg.app.goo.gl/epaper">Dainik Bhaskar</a> | <a href="https://edition.cnn.com/2020/04/28/india/india-coronavirus-outbreak-explained-intl-hnk/index.html">CNN</a> | <a href="https://www.ccn.com/indias-total-coronavirus-lockdown-isnt-enough-and-its-faltering/">CCN</a> | <a href="https://www.business-standard.com/article/current-affairs/49-day-lockdown-necessary-to-stop-coronavirus-resurgence-in-india-study-120032900487_1.html">Business Standard</a> | <a href="https://www.asiavillenews.com/article/experts-on-whether-india-will-flatten-covid-19-curve-effectively-37658">Asiaville</a></p>
+  </li>
+  <li>
+    <p>Python Trending has tweeted about PyRoss &lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;PyRoss - Mathematical modelling of infectious disease in Python. <a href="https://t.co/VBOmT5kaVT">https://t.co/VBOmT5kaVT</a> <a href="https://t.co/FRvEqWMlPL">https://t.co/FRvEqWMlPL</a>&lt;/p&gt;— Python Trending (@pythontrending) <a href="https://twitter.com/pythontrending/status/1244918005731033088?ref_src=twsrc%5Etfw">March 31, 2020</a>&lt;/blockquote&gt;</p>
+  </li>
+  <li>
+    <p>Python Weekly has tweeted about PyRoss &lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;PyRoss - Mathematical modelling of infectious disease in Python. <a href="https://t.co/MyTWTM1ItP">https://t.co/MyTWTM1ItP</a> <a href="https://twitter.com/hashtag/Python?src=hash&amp;ref_src=twsrc%5Etfw">#Python</a> <a href="https://twitter.com/hashtag/Coronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#Coronavirus</a> <a href="https://twitter.com/hashtag/Covid19?src=hash&amp;ref_src=twsrc%5Etfw">#Covid19</a> <a href="https://t.co/gzPNpWf7mK">pic.twitter.com/gzPNpWf7mK</a>&lt;/p&gt;— Python Weekly (@PythonWeekly) <a href="https://twitter.com/PythonWeekly/status/1248324915788492807?ref_src=twsrc%5Etfw">April 9, 2020</a>&lt;/blockquote&gt;</p>
+  </li>
+</ul>
+
+<h2 id="license">License</h2>
+<p>We believe that openness and sharing improves the practice of science and increases the reach of its benefits. This code is released under the <a href="http://opensource.org/licenses/MIT">MIT license</a>. Our choice is guided by the excellent article on <a href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002598">Licensing for the scientist-programmer</a>.</p>
 
   </div>
 
