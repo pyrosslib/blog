@@ -82,14 +82,6 @@ window.onload = wrap_img;
 
 <p><a href="https://github.com/rajeshrinet/pyross">PyRoss</a> is a numerical library that offers an integrated platform for <strong>inference</strong>, <strong>forecasts</strong> and <strong>non-pharmaceutical interventions</strong> in structured epidemiological compartment models.</p>
 
-<p><strong>Compartment models</strong> of arbitrary complexity can be  <strong>user-defined</strong> through Python dictionaries. The most common epidemiological models, and several less common ones, come pre-defined with the library. Models can include <strong>stages</strong> to allow for non-exponentially distributed compartmental residence times. Currently,  <a href="https://github.com/rajeshrinet/pyross/blob/master/docs/models.pdf">pre-defined models</a> include ones with multiple disease states (exposed, asymptomatic, symptomatic, etc) and may be further divided by age, and by objective medical states (hospitalized, in ICU, etc). The compartment framework supports models for <strong>disease surveillance</strong> and <strong>quarantine</strong> and a variety of other processes of epidemiological relevance.</p>
-
-<p><strong>Generative processes</strong> can be formulated <strong>stochastically</strong> (as Markov population processes) or <strong>deterministically</strong> (as systems of differential equations). Population processes are sampled exactly by the Doob-Gillespie algorithm or approximately by the tau-leaping algorithm while differential equations are integrated by both fixed and adaptive time-stepping. A <strong>hybrid algorithm</strong> transits dynamically between these  depending on the magnitude of the compartmental fluctuations.</p>
-
-<p><strong>Bayesian inference</strong> on pre-defined or user-defined models is performed using model-adapted <strong>Gaussian processes</strong>  derived from <strong>functional limit theorems</strong> for Markov  population process. Generative models are fitted to data through the surveillance model allowing for possibily <strong>unobserved</strong> compartments. The <strong>MAP</strong> estimates of parameters and their standard errors can be obtained rapidly by optimising, obviating the need for expensive Markov chain Monte Carlo. This enables the fast evaluation of the <strong>model evidence</strong>, through which competing models may be <strong>objectively compared</strong> and their forecasts combined by <strong>Bayesian model averaging</strong>. Forecasts of disease progression, then, can be <strong>fully Bayesian</strong>, convolving uncertainties in data, parameters and models. The sensitivity of these forecasts is estimated through the <strong>Fisher information matrix</strong>.</p>
-
-<p><strong>Non-pharmaceutical interventions</strong> are implemented as modifications of the <strong>contact structures</strong> of the model. <strong>Optimised control</strong> of these structures, given <strong>cost functions</strong>, is possible. This feature is being actively developed to be better integrated with the library.</p>
-
 
 
   
@@ -130,7 +122,7 @@ window.onload = wrap_img;
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/pyrosslib" title="pyrosslib"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
 </div>
 
   </div>
