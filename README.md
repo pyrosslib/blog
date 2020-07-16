@@ -38,13 +38,15 @@ See [this](https://github.com/fastai/fastpages#writing-blog-posts-with-jupyter) 
 
 Add a Markdown file to the `_posts` directory, commit and make a pull request. The name of the file should always be prefaced with the upload date (e.g. `2020-02-20-post-title.md`).
 
+Include the following in the top of your file, and edit the `title`, `description` and `categories`.
+
 ```
 ---
 toc: true
 layout: post
+title: Post title
 description: Post description
 categories: [news]
-title: Post title
 ---
 ```
 
