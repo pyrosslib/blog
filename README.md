@@ -4,7 +4,7 @@ You can visit the site at: https://pyrosslib.github.io/
 
 ## How to upload a new notebook post
 
-Add your notebook to the `_notebooks` directory in the repository. The name of the file should always be prefaced with the upload date (e.g. `2020-02-20-notebook-title.ipynb`).
+Add your notebook to the `_notebooks` directory in the repository, commit and make a pull request. The name of the file should always be prefaced with the upload date (e.g. `2020-02-20-notebook-title.ipynb`).
 
 The first cell of the notebook should always be of this form:
 
@@ -36,7 +36,7 @@ See [this](https://github.com/fastai/fastpages#writing-blog-posts-with-jupyter) 
 
 ## How to upload a new Markdown post
 
-Add a Markdown file to the `_posts` directory. The name of the file should always be prefaced with the upload date (e.g. `2020-02-20-post-title.md`).
+Add a Markdown file to the `_posts` directory, commit and make a pull request. The name of the file should always be prefaced with the upload date (e.g. `2020-02-20-post-title.md`).
 
 ```
 ---
