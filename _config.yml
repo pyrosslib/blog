@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+title: PyRoss Blog
+description: Inference, forecasts, and optimised control of epidemiological models in Python 
 github_username: pyrosslib
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "blog"
