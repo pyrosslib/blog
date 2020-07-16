@@ -14,7 +14,7 @@ The first cell of the notebook should always be of this form:
 
 - toc: true 
 - badges: true
-- comments: false
+- comments: true
 - categories: [notebook, simulation, testing]
 ```
 
@@ -45,6 +45,7 @@ Include the following in the top of your file, and edit the `title`, `descriptio
 toc: true
 layout: post
 title: Post title
+comments: true
 description: Post description
 categories: [news]
 ---
